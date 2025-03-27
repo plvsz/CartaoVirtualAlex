@@ -6,13 +6,13 @@ body {
     align-items: center;
     justify-content: center;
     font-family: "Ethnocentric Bold", "Ethnocentric", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: rgb(0, 0, 0);
 }
 
 .card {
     width: 100%;
     max-width: 400px;
-    background: white;
+    background: rgb(254,254,254);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -25,7 +25,7 @@ body {
     object-position: center;
     display: block;
     margin: 0;
-    border-radius: 15px 15px 0 0;
+    border-radius: 0;
     position: relative;
 }
 
@@ -36,15 +36,6 @@ body {
     left: 0;
     right: 0;
     height: 70%;
-    background: linear-gradient(to bottom, 
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.1) 20%,
-        rgba(255, 255, 255, 0.3) 40%,
-        rgba(255, 255, 255, 0.5) 60%,
-        rgba(255, 255, 255, 0.7) 80%,
-        rgba(255, 255, 255, 0.9) 100%
-    );
-    pointer-events: none;
 }
 
 .card-content {
@@ -55,16 +46,17 @@ body {
 }
 
 .name {
-    color: #00a3a3;
+    color: #00023D;
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 900;
     margin: 10px 0;
     font-family: "Ethnocentric Bold", "Ethnocentric", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .title {
-    color: #00a3a3;
+    color: #00023D;
     font-size: 20px;
     font-weight: bold;
     margin: 10px 0 40px 0;
@@ -85,7 +77,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #004d4d;
+    background: #00023D;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,7 +94,7 @@ body {
 
 .button-label {
     font-size: 11px;
-    color: #004d4d;
+    color: #00023D;
     margin-top: 3px;
     font-family: "Ethnocentric Bold", "Ethnocentric", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -119,7 +111,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #004d4d;
+    background: #00023D;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,40 +135,39 @@ body {
 .services {
     text-align: center;
     padding: 20px;
+    text-transform: uppercase;
 }
 
 .services-title {
-    color: #00a3a3;
+    color: #00023D;
     font-size: 24px;
     margin-bottom: 20px;
     font-family: "Ethnocentric Bold", "Ethnocentric", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
 }
 
 .services-list {
-    color: #004d4d;
+    color: #00023D;
     list-style: none;
     padding: 0;
     margin: 0;
     font-family: "Ethnocentric Bold", "Ethnocentric", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
+    font-weight: 900;
 }
 
 .services-list li {
     margin: 12px 0;
     position: relative;
-    padding-left: 20px;
+    padding-left: 0;
 }
 
 .services-list li::before {
-    content: "•";
-    color: #00a3a3;
-    position: absolute;
-    left: 0;
-    font-size: 18px;
+    display: none;
 }
 
 .cta-section {
-    background: #00a3a3;
+    background: #00023D;
     padding: 15px;
     text-align: center;
     color: white;
@@ -186,10 +177,12 @@ body {
     display: block;
     font-weight: bold;
     font-family: "Ethnocentric Bold", "Ethnocentric", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-radius: 0;
+    margin: 0;
 }
 
 .cta-section:hover {
-    background: #004d4d;
+    background: #00023D;
     color: white;
 }
 
@@ -197,17 +190,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 45px;
+    margin: 0 60px;
 }
 
 .company-logo {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
-    border-radius: 50%;
-    background: white;
-    padding: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: rgb(254,254,254);
+    padding: 8px;
+    box-shadow: none;
 }
 
 @media screen and (max-width: 480px) {
@@ -281,7 +273,7 @@ body {
     }
 
     .company-logo {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
     }
 } 
